@@ -1,0 +1,4 @@
+GET::/basic-route-example
+POST::/basic-route-example
+PUT::/basic-route-example
+DEL::/basic-route-example

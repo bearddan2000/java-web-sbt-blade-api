@@ -8,46 +8,38 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>POC of java maven app</name>
 	<properties>
+        <blade-mvc.version>2.0.14.RELEASE</blade-mvc.version>
+        <bootstrap.version>4.2.1</bootstrap.version>
+        <commons-lang3.version>3.14.0</commons-lang3.version>
+        <lombok.version>1.18.32</lombok.version>
+        <assembly.plugin.version>3.1.0</assembly.plugin.version>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
-	<dependencies>
-		<dependency>
-	<groupId>log4j</groupId>
-	<artifacId>log4j</artifactId>
-	<version>1.2.17</version>
-</dependency>
-<dependency>
-	<groupId>org.slf4j</groupId>
-	<artifacId>slf4j-api</artifactId>
-	<version>1.7.5</version>
-</dependency>
-<dependency>
-	<groupId>org.slf4j</groupId>
-	<artifacId>slf4j-log4j12</artifactId>
-	<version>1.7.5</version>
-</dependency>
-<dependency>
-	<groupId>com.microsoft.sqlserver</groupId>
-	<artifacId>mssql-jdbc</artifactId>
-	<version>8.4.1.jre11</version>
-</dependency>
-<dependency>
-	<groupId>org.hibernate</groupId>
-	<artifacId>hibernate-core</artifactId>
-	<version>5.3.7.Final</version>
-</dependency>
-<dependency>
-	<groupId>jakarta.xml.bind</groupId>
-	<artifacId>jakarta.xml.bind-api</artifactId>
-	<version>2.3.3</version>
-</dependency>
-<dependency>
-	<groupId>org.glassfish.jaxb</groupId>
-	<artifacId>jaxb-runtime</artifactId>
-	<version>2.3.3</version>
-</dependency>
-	</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>com.bladejava</groupId>
+            <artifactId>blade-mvc</artifactId>
+            <version>${blade-mvc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>${bootstrap.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+        <!-- PROVIDED -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 	<build>
 		<plugins>
       <plugin>
