@@ -1,7 +1,7 @@
-# java-web-maven-blade-api
+# java-web-sbt-blade-api
 
 ## Description
-A POC for blade framework rendering html page intercepted with middleware.
+A POC for blade framework.
 
 ## Tech stack
 - cors
@@ -10,7 +10,7 @@ A POC for blade framework rendering html page intercepted with middleware.
     - get, put, delete
 
 ## Docker stack
-- maven:3-openjdk-17
+- hseeberger/scala-sbt:11.0.2-oraclelinux7_1.3.5_2.12.10
 
 ## To run
 `sudo ./install.sh -u`
